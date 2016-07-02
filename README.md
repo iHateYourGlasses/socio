@@ -1,1 +1,1 @@
-Socioncs
+Yet another socionics web page!
