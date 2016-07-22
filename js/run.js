@@ -1,11 +1,19 @@
 var worsArray = [];
 $(document).ready(function() {
 
+	countWords();
+
   $("#textMainArea").on('keyup', function() {
 
-  	wordsArray = this.value.match(/\S+/g);
+  	countWords();
 
-  	console.log();
+  });
+ 
+}); 
+
+function countWords() {
+
+  	wordsArray =  $("#textMainArea").val().match(/\S+/g);
 
     if(wordsArray){
 
@@ -16,6 +24,4 @@ $(document).ready(function() {
 
   	else $('.wordCount').text('0');
 
-  });
- 
-}); 
+}
