@@ -60,4 +60,19 @@ function countWords() {
       var negPercents = (+negLength / +wordsLength * 100);
       $('.negPercents').text(negPercents.toFixed(2)+' %');
 
+
+    $.ajax({
+      url: 'json.php?event=getTextData',
+      type: "POST",
+      dataType: "json",
+      data:{
+      text: wordsArray
+      },
+      success: function (response) {
+        console.log(response);
+      },
+      error: function (jqXHR, textStatus, errorThrown) {
+        console.log(jqXHR);
+      }
+    })
 }
