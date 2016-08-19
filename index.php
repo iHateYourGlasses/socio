@@ -27,9 +27,9 @@
 		</div>
 		<div class='row'>
 		<span>Количество слов: <span class='wordCount'></span></span><br>
-		<span>Количество отрицаний: <span class='negCount'></span></span><br>
-		<span>Процент отрицаний: <span class='negPercents'></span></span><br>
-		<span>Пойманные слова - отрицания: <span class='catchedNeg'></span></span>
+		<span>Количество отрицаний: <span class='negCount'></span></span><span>, процент отрицаний: <span class='negPercents'></span></span><br>
+		<span>Пойманные слова - отрицания: <span class='catchedNeg'></span></span><br>
+		<span>Количество глаголов: <span class="verbsCount"></span>, процент: <span class="verbsPercent"></span>, процент усредненный: <span class="verbsAvgPercent"></span></span>
 		</div>
 	</div>
 </body>
